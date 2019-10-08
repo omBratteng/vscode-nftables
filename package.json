@@ -1,0 +1,30 @@
+{
+    "name": "nft",
+	"displayName": "nftable",
+	"publisher": "omBratteng",
+	"description": "Language support package for the nftables configuration syntax",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/omBratteng/vscode-nftables"
+	},
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.38.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "nft",
+            "aliases": ["NFTables", "nft"],
+            "extensions": [".nft"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "nft",
+            "scopeName": "source.nft",
+            "path": "./syntaxes/nft.json"
+        }]
+    }
+}
