@@ -1,5 +1,5 @@
 {
-    "name": "nftalbs",
+  "name": "nftables",
 	"displayName": "nftables",
 	"publisher": "omBratteng",
 	"description": "Language support package for the nftables configuration syntax",
