@@ -31,14 +31,14 @@
         "extensions": [
           "nft"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./dist/language-configuration.json"
       }
     ],
     "grammars": [
       {
         "language": "nft",
         "scopeName": "source.nft",
-        "path": "./syntaxes/nft.json"
+        "path": "./dist/nft.json"
       }
     ]
   },
@@ -59,6 +59,7 @@
     "@types/vscode": "^1.38.0",
     "@typescript-eslint/eslint-plugin": "^4.16.0",
     "@typescript-eslint/parser": "^4.16.0",
+    "copy-webpack-plugin": "^8.1.0",
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
