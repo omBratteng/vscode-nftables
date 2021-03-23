@@ -12,7 +12,8 @@
     "vscode": "^1.38.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "Snippets"
   ],
   "icon": "icon.png",
   "activationEvents": [
@@ -39,6 +40,12 @@
         "language": "nft",
         "scopeName": "source.nft",
         "path": "./dist/nft.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "nft",
+        "path": "./dist/snippets.json"
       }
     ]
   },
