@@ -2,7 +2,7 @@
 
 import * as vscode from 'vscode'
 
-export function activate(context: vscode.ExtensionContext) {
+export function activate(): void {
 	vscode.languages.registerDocumentFormattingEditProvider(
 		{ scheme: 'file', language: 'nft' },
 		{
