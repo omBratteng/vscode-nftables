@@ -2,6 +2,11 @@
 
 import * as vscode from 'vscode'
 
+const SHEBANG = '#!' // #!/usr/bin/nft
+const BRACE_OPEN = '{'
+const BRACE_CLOSE = '}'
+const COMMENT = '#'
+
 const registerDocumentProvider = (
 	document: vscode.TextDocument,
 	options: vscode.FormattingOptions,
@@ -16,13 +21,27 @@ const registerDocumentProvider = (
 	for (let i = 0; i < document.lineCount; i++) {
 		const line: string = document.lineAt(i).text.trim()
 
+		if (i == 0 && line.startsWith(SHEBANG)) {
+			// First line and has a shebang, skip the entire line
+			continue
+		}
+
 		let skip = false
 
-		if (line.includes('{') && line.includes('}')) {
+		if (line.startsWith(COMMENT)) {
+			// Comment line, do not care about {}
 			skip = true
 		}
 
-		if (!skip && line.endsWith('}')) {
+		if (line.includes(BRACE_OPEN) && line.includes(BRACE_CLOSE)) {
+			// Possibly:
+			// - define foo = {...}
+			// - elements = {...}
+			// - ip daddr {...} ... or other rule
+			skip = true
+		}
+
+		if (!skip && line.endsWith(BRACE_CLOSE)) {
 			indentLevel--
 		}
 
@@ -36,7 +55,7 @@ const registerDocumentProvider = (
 
 		edits.push(vscode.TextEdit.replace(document.lineAt(i).range, newline))
 
-		if (!skip && line.endsWith('{')) {
+		if (!skip && line.endsWith(BRACE_OPEN)) {
 			indentLevel++
 		}
 	}
