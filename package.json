@@ -44,10 +44,12 @@
   },
   "scripts": {
     "vscode:prepublish": "yarn build",
-    "dev": "tsc --watch",
-    "build": "tsc",
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production",
     "lint": "yarn lint:eslint",
-    "lint:eslint": "eslint 'src/**/*.ts' --cache --report-unused-disable-directives"
+    "lint:eslint": "eslint 'src/**/*.ts' --cache --report-unused-disable-directives",
+    "test": "yarn test:compike",
+    "test:compile": "tsc -p ./"
   },
   "dependencies": {
     "vscode-test": "^1.5.1"
@@ -61,7 +63,10 @@
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
     "prettier": "^2.2.1",
-    "typescript": "^4.2.2"
+    "ts-loader": "^8.0.18",
+    "typescript": "^4.2.2",
+    "webpack": "^5.27.2",
+    "webpack-cli": "^4.5.0"
   },
   "__metadata": {
     "id": "c5d628a9-92b9-48ed-9b1d-1cb60aea79bd",
