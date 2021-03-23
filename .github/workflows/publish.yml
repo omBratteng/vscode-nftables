@@ -43,13 +43,18 @@ jobs:
         name: Build vsix
         run: |
           yarn vsce package
-          ls -la
 
       -
-        name: Release
+        name: GitHub Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: '*.vsix'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      -
+        name: Release
+        run: |
+          yarn vsce publish --pat ${{ secrets.VSCE_PAT }}
+          yarn ovsx publish --pat ${{ secrets.OVSX_PAT }}
