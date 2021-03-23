@@ -1,48 +1,57 @@
-'use strict';
+'use strict'
 
-import * as vscode from 'vscode';
+import * as vscode from 'vscode'
 
-export function activate(context: vscode.ExtensionContext) {
+const registerDocumentProvider = (
+	document: vscode.TextDocument,
+	options: vscode.FormattingOptions,
+): vscode.TextEdit[] => {
+	const edits: vscode.TextEdit[] = []
+	const { insertSpaces, tabSize } = options
 
-    vscode.languages.registerDocumentFormattingEditProvider({ scheme: 'file', language: 'nft' }, {
-        provideDocumentFormattingEdits(document: vscode.TextDocument): vscode.TextEdit[] {
+	const indent = insertSpaces ? ' '.repeat(tabSize) : '\t'
 
-            let edits:vscode.TextEdit[] = [];
+	let indentLevel = 0
 
-            let indentLevel: number = 0;
+	for (let i = 0; i < document.lineCount; i++) {
+		const line: string = document.lineAt(i).text.trim()
 
-            for (var i = 0; i < document.lineCount; i++) {
-                const line: string = document.lineAt(i).text.trim();
+		let skip = false
 
-                let skip: Boolean = false;
+		if (line.includes('{') && line.includes('}')) {
+			skip = true
+		}
 
-                if (line.includes("{") && line.includes("}")) {
-                    skip = true;
-                }
+		if (!skip && line.endsWith('}')) {
+			indentLevel--
+		}
 
-                if (!skip && line.endsWith("}")) {
-                    indentLevel--;
-                }
+		// Generate new indentated line
+		let newline: string = indent.repeat(indentLevel) + line
 
-                // Generate new indentated line
-                let newline:string = "\t".repeat(indentLevel) + line;
+		if (newline.trim() == '') {
+			// No indentation for empty line
+			newline = ''
+		}
 
-                if (newline.trim() == "") {
-                    // No indentation for empty line
-                    newline = "";
-                }
+		edits.push(vscode.TextEdit.replace(document.lineAt(i).range, newline))
 
-                edits.push(
-                    vscode.TextEdit.replace(document.lineAt(i).range, newline)
-                );
+		if (!skip && line.endsWith('{')) {
+			indentLevel++
+		}
+	}
 
-                if (!skip && line.endsWith("{")) {
-                    indentLevel++;
-                }
+	return edits
+}
 
-            }
-
-            return edits;
-        }
-    });
+export function activate(context: vscode.ExtensionContext): void {
+	context.subscriptions.push(
+		vscode.languages.registerDocumentFormattingEditProvider(
+			{ scheme: 'file', language: 'nft' },
+			{
+				provideDocumentFormattingEdits: (document, options) =>
+					registerDocumentProvider(document, options),
+			},
+		),
+	)
 }
