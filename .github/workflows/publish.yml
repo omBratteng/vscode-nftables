@@ -56,5 +56,5 @@ jobs:
       -
         name: Release
         run: |
-          yarn vsce publish --pat ${{ secrets.VSCE_PAT }}
-          yarn ovsx publish --pat ${{ secrets.OVSX_PAT }}
+          yarn vsce publish --yarn --pat ${{ secrets.VSCE_PAT }}
+          yarn ovsx publish --yarn --pat ${{ secrets.OVSX_PAT }}
