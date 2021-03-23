@@ -1,0 +1,60 @@
+name: publish
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-20.04
+    if: startsWith(github.ref, 'refs/tags/')
+
+    steps:
+      -
+        name: Checkout code
+        uses: actions/checkout@v2
+
+      -
+        name: Use Node.js 14
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      -
+        name: Cache node_modules
+        id: cache-node_modules
+        uses: actions/cache@v2.1.4
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-build-node_modules-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-build-node_modules-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      -
+        name: Install dependencies
+        if: steps.cache-node_modules.outputs.cache-hit != 'true'
+        run: |
+          yarn install --frozen-lockfile
+
+      -
+        name: Build vsix
+        run: |
+          yarn vsce package
+
+      -
+        name: GitHub Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: '*.vsix'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      -
+        name: Release
+        run: |
+          yarn vsce publish --pat ${{ secrets.VSCE_PAT }}
+          yarn ovsx publish --pat ${{ secrets.OVSX_PAT }}
