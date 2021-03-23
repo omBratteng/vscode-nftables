@@ -2,6 +2,7 @@
   "name": "nftables",
   "displayName": "nftables",
   "publisher": "omBratteng",
+  "private": true,
   "description": "Language support package for the nftables configuration syntax",
   "repository": {
     "type": "git",
