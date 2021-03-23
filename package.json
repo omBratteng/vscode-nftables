@@ -1,68 +1,68 @@
 {
-	"name": "nftables",
-	"displayName": "nftables",
-	"publisher": "omBratteng",
-	"description": "Language support package for the nftables configuration syntax",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/omBratteng/vscode-nftables"
-	},
-	"version": "0.0.3",
-	"engines": {
-		"vscode": "^1.38.0"
-	},
-	"categories": [
-		"Programming Languages"
-	],
-	"icon": "icon.png",
-	"activationEvents": [
-		"onLanguage:nft",
-		"onCommand:extension.nft"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"languages": [
-			{
-				"id": "nft",
-				"aliases": [
-					"NFTables",
-					"nft"
-				],
-				"extensions": [
-					"nft"
-				],
-				"configuration": "./language-configuration.json"
-			}
-		],
-		"grammars": [
-			{
-				"language": "nft",
-				"scopeName": "source.nft",
-				"path": "./syntaxes/nft.json"
-			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"lint": "eslint . --ext .ts,.tsx",
-		"watch": "tsc -watch -p ./",
-		"postinstall": "node ./node_modules/vscode/bin/install && tsc"
-	},
-	"dependencies": {
-		"vscode": "^1.1.37"
-	},
-	"devDependencies": {
-		"@types/node": "^12.12.0",
-		"@types/vscode": "^1.38.0",
-		"@typescript-eslint/eslint-plugin": "^4.16.0",
-		"@typescript-eslint/parser": "^4.16.0",
-		"eslint": "^7.21.0",
-		"typescript": "^4.2.2"
-	},
-	"__metadata": {
-		"id": "c5d628a9-92b9-48ed-9b1d-1cb60aea79bd",
-		"publisherId": "04f38382-fd0a-4fc7-8de4-f57dbc9520be",
-		"publisherDisplayName": null
-	}
+  "name": "nftables",
+  "displayName": "nftables",
+  "publisher": "omBratteng",
+  "description": "Language support package for the nftables configuration syntax",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omBratteng/vscode-nftables"
+  },
+  "version": "0.0.3",
+  "engines": {
+    "vscode": "^1.38.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "icon": "icon.png",
+  "activationEvents": [
+    "onLanguage:nft",
+    "onCommand:extension.nft"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "nft",
+        "aliases": [
+          "NFTables",
+          "nft"
+        ],
+        "extensions": [
+          "nft"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "nft",
+        "scopeName": "source.nft",
+        "path": "./syntaxes/nft.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint . --ext .ts,.tsx",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install && tsc"
+  },
+  "dependencies": {
+    "vscode": "^1.1.37"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.0",
+    "@types/vscode": "^1.38.0",
+    "@typescript-eslint/eslint-plugin": "^4.16.0",
+    "@typescript-eslint/parser": "^4.16.0",
+    "eslint": "^7.21.0",
+    "typescript": "^4.2.2"
+  },
+  "__metadata": {
+    "id": "c5d628a9-92b9-48ed-9b1d-1cb60aea79bd",
+    "publisherId": "04f38382-fd0a-4fc7-8de4-f57dbc9520be",
+    "publisherDisplayName": null
+  }
 }
