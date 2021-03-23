@@ -2,52 +2,56 @@
 
 import * as vscode from 'vscode'
 
-export function activate(): void {
-	vscode.languages.registerDocumentFormattingEditProvider(
-		{ scheme: 'file', language: 'nft' },
-		{
-			provideDocumentFormattingEdits(
-				document: vscode.TextDocument,
-			): vscode.TextEdit[] {
-				const edits: vscode.TextEdit[] = []
+const registerDocumentProvider = (
+	document: vscode.TextDocument,
+	options: vscode.FormattingOptions,
+): vscode.TextEdit[] => {
+	const edits: vscode.TextEdit[] = []
+	const { insertSpaces, tabSize } = options
 
-				let indentLevel = 0
+	const indent = insertSpaces ? ' '.repeat(tabSize) : '\t'
 
-				for (let i = 0; i < document.lineCount; i++) {
-					const line: string = document.lineAt(i).text.trim()
+	let indentLevel = 0
 
-					let skip = false
+	for (let i = 0; i < document.lineCount; i++) {
+		const line: string = document.lineAt(i).text.trim()
 
-					if (line.includes('{') && line.includes('}')) {
-						skip = true
-					}
+		let skip = false
 
-					if (!skip && line.endsWith('}')) {
-						indentLevel--
-					}
+		if (line.includes('{') && line.includes('}')) {
+			skip = true
+		}
 
-					// Generate new indentated line
-					let newline: string = '\t'.repeat(indentLevel) + line
+		if (!skip && line.endsWith('}')) {
+			indentLevel--
+		}
 
-					if (newline.trim() == '') {
-						// No indentation for empty line
-						newline = ''
-					}
+		// Generate new indentated line
+		let newline: string = indent.repeat(indentLevel) + line
 
-					edits.push(
-						vscode.TextEdit.replace(
-							document.lineAt(i).range,
-							newline,
-						),
-					)
+		if (newline.trim() == '') {
+			// No indentation for empty line
+			newline = ''
+		}
 
-					if (!skip && line.endsWith('{')) {
-						indentLevel++
-					}
-				}
+		edits.push(vscode.TextEdit.replace(document.lineAt(i).range, newline))
 
-				return edits
+		if (!skip && line.endsWith('{')) {
+			indentLevel++
+		}
+	}
+
+	return edits
+}
+
+export function activate(context: vscode.ExtensionContext): void {
+	context.subscriptions.push(
+		vscode.languages.registerDocumentFormattingEditProvider(
+			{ scheme: 'file', language: 'nft' },
+			{
+				provideDocumentFormattingEdits: (document, options) =>
+					registerDocumentProvider(document, options),
 			},
-		},
+		),
 	)
 }
