@@ -49,6 +49,9 @@
 		"watch": "tsc -watch -p ./",
 		"postinstall": "node ./node_modules/vscode/bin/install && tsc"
 	},
+	"dependencies": {
+		"vscode": "^1.1.37"
+	},
 	"devDependencies": {
 		"@types/node": "^12.12.0",
 		"@types/vscode": "^1.38.0",
@@ -61,8 +64,5 @@
 		"id": "c5d628a9-92b9-48ed-9b1d-1cb60aea79bd",
 		"publisherId": "04f38382-fd0a-4fc7-8de4-f57dbc9520be",
 		"publisherDisplayName": null
-	},
-	"dependencies": {
-		"vscode": "^1.1.37"
 	}
 }
