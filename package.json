@@ -55,9 +55,7 @@
     "dev": "webpack --mode development --watch",
     "build": "webpack --mode production",
     "lint": "yarn lint:eslint",
-    "lint:eslint": "eslint 'src/**/*.ts' --cache --report-unused-disable-directives",
-    "test": "yarn test:compike",
-    "test:compile": "tsc -p ./"
+    "lint:eslint": "eslint 'src/**/*.ts' --cache --report-unused-disable-directives"
   },
   "dependencies": {
     "vscode-test": "^1.5.1"
