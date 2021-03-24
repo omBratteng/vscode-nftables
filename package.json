@@ -58,6 +58,7 @@
     "lint:eslint": "eslint 'src/**/*.ts' --cache --report-unused-disable-directives"
   },
   "devDependencies": {
+    "@types/copy-webpack-plugin": "^6.4.0",
     "@types/vscode": "1.44.0",
     "@typescript-eslint/eslint-plugin": "^4.16.0",
     "@typescript-eslint/parser": "^4.16.0",
@@ -68,6 +69,7 @@
     "ovsx": "^0.1.0-next.a9154dc",
     "prettier": "^2.2.1",
     "ts-loader": "^8.0.18",
+    "ts-node": "^9.1.1",
     "typescript": "^4.2.2",
     "vsce": "^1.87.0",
     "vscode-test": "^1.5.1",
