@@ -45,6 +45,12 @@ jobs:
           yarn vsce package
 
       -
+        name: Release
+        run: |
+          yarn vsce publish --yarn --pat ${{ secrets.VSCE_PAT }}
+          yarn ovsx publish --yarn --pat ${{ secrets.OVSX_PAT }}
+
+      -
         name: GitHub Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
@@ -52,9 +58,3 @@ jobs:
           files: '*.vsix'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      -
-        name: Release
-        run: |
-          yarn vsce publish --yarn --pat ${{ secrets.VSCE_PAT }}
-          yarn ovsx publish --yarn --pat ${{ secrets.OVSX_PAT }}
