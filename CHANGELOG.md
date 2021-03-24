@@ -5,7 +5,12 @@ All notable changes to the "nft" extension will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+<!-- ## [Unreleased] -->
+
+## [0.3.2] - 2021-03-24
+
+- Improve formatting support to support one liners and comments
+- Set VSCode engine requirement to v1.44 (10 versions behind current release)
 
 ## [0.3.1] - 2021-03-23
 
@@ -45,7 +50,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release [`bf39000`](https://github.com/omBratteng/vscode-nftables/commit/bf39000)
 
-[Unreleased]: https://github.com/omBratteng/vscode-nftables/compare/0.3.1...HEAD
+[Unreleased]: https://github.com/omBratteng/vscode-nftables/compare/0.3.2...HEAD
+[0.3.2]: https://github.com/omBratteng/vscode-nftables/compare/0.3.1...0.3.2
 [0.3.1]: https://github.com/omBratteng/vscode-nftables/compare/0.3.0...0.3.1
 [0.3.0]: https://github.com/omBratteng/vscode-nftables/compare/0.2.1...0.3.0
 [0.2.1]: https://github.com/omBratteng/vscode-nftables/compare/0.2.0...0.2.1
