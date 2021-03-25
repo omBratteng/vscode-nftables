@@ -5,7 +5,7 @@
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/omBratteng/vscode-nftables/continuous-integration?label=CI%20Build&style=for-the-badge)](https://github.com/omBratteng/vscode-nftables/actions/workflows/continous-integration.yml)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=for-the-badge)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=for-the-badge)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A VSCode language support package for the nftables configuration syntax.
@@ -38,6 +38,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://bratteng.sh/"><img src="https://avatars.githubusercontent.com/u/1681525?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ole-Martin Bratteng</b></sub></a><br /><a href="https://github.com/omBratteng/vscode-nftables/commits?author=omBratteng" title="Code">💻</a></td>
     <td align="center"><a href="http://raspi.fi"><img src="https://avatars.githubusercontent.com/u/132441?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Pekka Järvinen</b></sub></a><br /><a href="https://github.com/omBratteng/vscode-nftables/commits?author=raspi" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/features/security"><img src="https://avatars.githubusercontent.com/u/27347476?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Dependabot</b></sub></a><br /><a href="#tool-dependabot" title="Tools">🔧</a></td>
   </tr>
 </table>
 
