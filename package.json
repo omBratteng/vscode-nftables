@@ -10,7 +10,7 @@
   },
   "version": "0.3.3",
   "engines": {
-    "vscode": "^1.44.0"
+    "vscode": "^1.45.0"
   },
   "categories": [
     "Programming Languages",
@@ -59,7 +59,7 @@
   },
   "devDependencies": {
     "@types/copy-webpack-plugin": "^6.4.1",
-    "@types/vscode": "1.44.0",
+    "@types/vscode": "1.45.0",
     "@typescript-eslint/eslint-plugin": "^4.21.0",
     "@typescript-eslint/parser": "^4.21.0",
     "copy-webpack-plugin": "^8.1.0",
