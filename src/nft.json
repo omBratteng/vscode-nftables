@@ -744,6 +744,13 @@
 				}
 			]
 		},
+		"map_block": {
+			"patterns": [
+				{
+					"include": "#set_block"
+				}
+			]
+		},
 		"stmt": {
 			"patterns": [
 				{
@@ -1055,7 +1062,7 @@
 					"include": "#match_stmt"
 				},
 				{
-					"match": "([^;]*)\\s+(set)\\s+([^;]*)",
+					"match": "([^;#]*)\\s+(set)\\s+([^;]*)",
 					"name": "meta.stmt.payload.nft",
 					"captures": {
 						"1": {
@@ -1085,7 +1092,7 @@
 					"include": "#verdict_expr"
 				},
 				{
-					"begin": "([^;]*)\\s+(vmap)",
+					"begin": "([^;#]*)\\s+(vmap)",
 					"name": "meta.stmt.verdict",
 					"beginCaptures": {
 						"1": {
@@ -1984,7 +1991,7 @@
 					"include": "#set_expr"
 				},
 				{
-					"match": "([^,;:{]+)\\s*(:)\\s*([^,;:}]+)",
+					"match": "([^\",;:{]+)\\s*(:)\\s*([^\",;:}]+)",
 					"captures": {
 						"1": {
 							"patterns": [
