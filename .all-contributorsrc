@@ -32,6 +32,15 @@
       "contributions": [
         "tool"
       ]
+    },
+    {
+      "login": "andreas51",
+      "name": "andreas51",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46762314?v=4",
+      "profile": "https://github.com/andreas51",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
