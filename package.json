@@ -58,7 +58,7 @@
     "lint:eslint": "eslint 'src/**/*.ts' --cache --report-unused-disable-directives"
   },
   "devDependencies": {
-    "@types/copy-webpack-plugin": "^6.4.1",
+    "@types/copy-webpack-plugin": "^8.0.0",
     "@types/vscode": "1.45.0",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
