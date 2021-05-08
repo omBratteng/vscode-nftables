@@ -582,7 +582,7 @@
 			}
 		},
 		"hook_spec": {
-			"match": "(type)\\s+([a-zA-Z_\\.][a-zA-Z0-9/\\-_\\.]*)\\s+(hook)\\s+([a-zA-Z_\\.][a-zA-Z0-9/\\-_\\.]*)\\s+(?:(device)\\s+([a-zA-Z_\\.][a-zA-Z0-9/\\-_\\.]*)\\s+)?(priority)\\s+(-?\\d+)",
+			"match": "(type)\\s+([a-zA-Z_\\.][a-zA-Z0-9/\\-_\\.]*)\\s+(hook)\\s+([a-zA-Z_\\.][a-zA-Z0-9/\\-_\\.]*)\\s+(?:(device)\\s+([a-zA-Z_\\.][a-zA-Z0-9/\\-_\\.]*)\\s+)?(priority)\\s+(-?\\d+|[a-z]+)",
 			"captures": {
 				"1": {
 					"name": "keyword.function.type.nft"
