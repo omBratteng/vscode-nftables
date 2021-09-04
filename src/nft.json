@@ -1,9 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
   "name": "NFTables",
-  "fileTypes": [
-    "nft"
-  ],
+  "fileTypes": ["nft"],
   "firstLineMatch": "^#!.*nft",
   "foldingStartMarker": "\\{\\s*$",
   "foldingStopMarker": "^\\s*\\}",
@@ -1421,7 +1419,7 @@
           "name": "delimiter.prefix.nft"
         },
         "3": {
-          "name": "constant.prefixlen.numeric.nft"
+          "name": "constant.numeric.prefixlen.nft"
         }
       }
     },
