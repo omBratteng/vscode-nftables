@@ -1,7 +1,9 @@
 {
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
   "name": "NFTables",
-  "fileTypes": ["nft"],
+  "fileTypes": [
+    "nft"
+  ],
   "firstLineMatch": "^#!.*nft",
   "foldingStartMarker": "\\{\\s*$",
   "foldingStopMarker": "^\\s*\\}",
@@ -674,8 +676,12 @@
             }
           ]
         },
-        "2": "support.function.handle.nft",
-        "3": "constant.numeric.rulehandle.nft"
+        "2": {
+          "name": "support.function.handle.nft"
+        },
+        "3": {
+          "name": "constant.numeric.rulehandle.nft"
+        }
       }
     },
     "rule_position": {
