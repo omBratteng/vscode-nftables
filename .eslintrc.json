@@ -1,40 +1,38 @@
 {
-	"root": true,
-	"parser": "@typescript-eslint/parser",
-	"parserOptions": {
-		"ecmaVersion": 2021,
-		"sourceType": "module",
-		"project": "./tsconfig.json",
-		"warnOnUnsupportedTypeScriptVersion": false
-	},
-	"plugins": [
-		"@typescript-eslint"
-	],
-	"env": {
-		"browser": true,
-		"es6": true,
-		"node": true
-	},
-	"extends": [
-		"plugin:@typescript-eslint/recommended",
-		"plugin:prettier/recommended"
-	],
-	"globals": {
-		"global": true
-	},
-	"ignorePatterns": ["**/*.min.*"],
-	"rules": {
-		"prettier/prettier": [
-			"error",
-			{
-				"semi": false,
-				"singleQuote": true,
-				"tabWidth": 4,
-				"trailingComma": "all",
-				"useTabs": true
-			}
-		],
-		"@typescript-eslint/type-annotation-spacing": "error",
-		"@typescript-eslint/no-empty-function": "off"
-	}
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "project": "./tsconfig.json",
+    "warnOnUnsupportedTypeScriptVersion": false
+  },
+  "plugins": ["@typescript-eslint"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "globals": {
+    "global": true
+  },
+  "ignorePatterns": ["**/*.min.*"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": false,
+        "singleQuote": true,
+        "tabWidth": 4,
+        "trailingComma": "all",
+        "useTabs": true
+      }
+    ],
+    "@typescript-eslint/type-annotation-spacing": "error",
+    "@typescript-eslint/no-empty-function": "off"
+  }
 }

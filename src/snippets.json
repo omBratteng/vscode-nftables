@@ -1,44 +1,44 @@
 {
-	"Redefine table": {
-		"description": "Redefine table",
-		"prefix": "ftable",
-		"body": [
-			"flush table $1",
-			"table ${2:ip} $1{",
-			"\t$0",
-			"}"
-		]
-	},
-	"Table Block": {
-		"description": "Table Block",
-		"prefix": "table",
-		"body": [
-			"table ${2:ip} $1{",
-			"\t$0",
-			"}"
-		]
-	},
-	"Define set": {
-		"description": "Define set",
-		"prefix": "set",
-		"body": [
-			"set $1{",
-			"\ttype ${2:ipv4_addr};",
-			"\telements = {",
-			"\t\t$0",
-			"\t}",
-			"}"
-		]
-	},
-	"Define chain": {
-		"description": "Define chain",
-		"prefix": "chain",
-		"body": [
-			"chain $1{",
-			"\ttype ${2:filter} hook ${3:input} priority ${4:0}",
-			"\tpolicy ${5:drop}",
-			"\t$0",
-			"}"
-		]
-	}
+  "Redefine table": {
+    "description": "Redefine table",
+    "prefix": "ftable",
+    "body": [
+      "flush table $1",
+      "table ${2:ip} $1{",
+      "\t$0",
+      "}"
+    ]
+  },
+  "Table Block": {
+    "description": "Table Block",
+    "prefix": "table",
+    "body": [
+      "table ${2:ip} $1{",
+      "\t$0",
+      "}"
+    ]
+  },
+  "Define set": {
+    "description": "Define set",
+    "prefix": "set",
+    "body": [
+      "set $1{",
+      "\ttype ${2:ipv4_addr};",
+      "\telements = {",
+      "\t\t$0",
+      "\t}",
+      "}"
+    ]
+  },
+  "Define chain": {
+    "description": "Define chain",
+    "prefix": "chain",
+    "body": [
+      "chain $1{",
+      "\ttype ${2:filter} hook ${3:input} priority ${4:0}",
+      "\tpolicy ${5:drop}",
+      "\t$0",
+      "}"
+    ]
+  }
 }
