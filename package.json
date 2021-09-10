@@ -59,7 +59,7 @@
   },
   "devDependencies": {
     "@types/copy-webpack-plugin": "^8.0.1",
-    "@types/node": "^16.7.13",
+    "@types/node": "^16.9.1",
     "@types/vscode": "1.50.0",
     "@typescript-eslint/eslint-plugin": "^4.31.0",
     "@typescript-eslint/parser": "^4.31.0",
