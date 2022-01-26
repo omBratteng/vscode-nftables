@@ -1904,7 +1904,7 @@
           "name": "constant.numeric.hexadecimal.nft"
         },
         {
-          "match": "\\b\"[^\"]*\"\\b",
+          "match": "\\b\"*\"\\b",
           "name": "string.quoted.double"
         },
         {
