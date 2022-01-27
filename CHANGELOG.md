@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - chore(deps): bump dependencies
 - chore(deps): set dependabot to weekly interval
 - chore(deps): change the `@types/node` dependency range
+- fix: updated string.quoted.double in nft syntax (#194)
 
 ## [0.4.4] - 2021-10-13
 
@@ -96,7 +97,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release [`bf39000`](https://github.com/omBratteng/vscode-nftables/commit/bf39000)
 
-[Unreleased]: https://github.com/omBratteng/vscode-nftables/compare/0.4.4...main
+[0.4.5]: https://github.com/omBratteng/vscode-nftables/compare/0.4.4...0.4.5
 [0.4.4]: https://github.com/omBratteng/vscode-nftables/compare/0.4.3...0.4.4
 [0.4.3]: https://github.com/omBratteng/vscode-nftables/compare/0.4.2...0.4.3
 [0.4.2]: https://github.com/omBratteng/vscode-nftables/compare/0.4.1...0.4.2
