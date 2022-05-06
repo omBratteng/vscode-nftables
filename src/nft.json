@@ -1101,19 +1101,35 @@
           }
         },
         {
-          "match": "([sd]nat)(?:\\s+(ip|ip6))?\\s+(to)\\s+([^;\\n]+)",
+          "match": "([sd]nat)(?:\\s+(ip|ip6))?(\\s+to)?\\s+([^;\\n]+)",
           "captures": {
             "1": {
-              "name": "keyword.other.dnat.nft"
+              "name": "keyword.control.nat.nft"
             },
             "2": {
-              "name": "support.class.ip.nft"
+              "name": "meta.stmt.ip.nft"
             },
             "3": {
               "name": "keyword.other.to.nft"
             },
             "4": {
               "name": "meta.stmt.nfnatdest.nft",
+              "patterns": [
+                {
+                  "include": "#stmt_expr"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "match": "(flow\\s+offload)\\s+([^;\\n]+)",
+          "captures": {
+            "1": {
+              "name": "keyword.control.flowtable.nft"
+            },
+            "2": {
+              "name": "meta.stmt.tablename.nft",
               "patterns": [
                 {
                   "include": "#stmt_expr"
