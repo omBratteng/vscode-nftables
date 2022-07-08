@@ -5,6 +5,10 @@ All notable changes to the "nft" extension will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+- docs: add TkPegatron as a contributor for code by @allcontributors in [(#283)](https://github.com/omBratteng/vscode-nftables/pull/283)
+
 ## [0.5.0] - 2022-07-08
 
 - chore(deps): bump actions/setup-node from 2.5.1 to 3.3.0 by @dependabot in [(#265)](https://github.com/omBratteng/vscode-nftables/pull/265)
