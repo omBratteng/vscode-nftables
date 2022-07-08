@@ -7,10 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- docs(changelog): fix username for @all-contributors in CHANGELOG by @omBratteng
+
 ## [0.5.1]
 
-- docs: add TkPegatron as a contributor for code by @allcontributors in [(#283)](https://github.com/omBratteng/vscode-nftables/pull/283)
-- docs: fix link for Unreleased changes
+- docs: add TkPegatron as a contributor for code by @all-contributors in [(#283)](https://github.com/omBratteng/vscode-nftables/pull/283)
+- docs: fix link for Unreleased changes by @omBratteng
 
 ## [0.5.0] - 2022-07-08
 
