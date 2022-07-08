@@ -5,6 +5,24 @@ All notable changes to the "nft" extension will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2022-07-08
+
+- chore(deps): bump actions/setup-node from 2.5.1 to 3.3.0 by @dependabot in [(#265)](https://github.com/omBratteng/vscode-nftables/pull/265)
+- chore(deps): bump actions/cache from 2.1.7 to 3.0.4 by @dependabot in [(#264)](https://github.com/omBratteng/vscode-nftables/pull/264)
+- chore(deps): bump crazy-max/ghaction-github-labeler from 3.1.1 to 4.0.0 by @dependabot in [(#256)](https://github.com/omBratteng/vscode-nftables/pull/256)
+- chore(deps): bump actions/checkout from 2.4.0 to 3.0.2 by @dependabot in [(#238)](https://github.com/omBratteng/vscode-nftables/pull/238)
+- chore(deps): bump simple-get from 3.1.0 to 3.1.1 by @dependabot in [(#277)](https://github.com/omBratteng/vscode-nftables/pull/277)
+- chore(deps): bump follow-redirects from 1.14.7 to 1.14.8 by @dependabot in [(#201)](https://github.com/omBratteng/vscode-nftables/pull/201)
+- chore(deps): bump minimist from 1.2.5 to 1.2.6 by @dependabot in [(#224)](https://github.com/omBratteng/vscode-nftables/pull/224)
+- chore: bump supported vscode version to `1.58` by @omBratteng in [(#278)](https://github.com/omBratteng/vscode-nftables/pull/278)
+- chore: use node 18 in workflow by @omBratteng in [(#279)](https://github.com/omBratteng/vscode-nftables/pull/279)
+- chore: bump dependencies by @omBratteng in [(#282)](https://github.com/omBratteng/vscode-nftables/pull/282)
+- feat(core): support flowtables, [sd]nat, th match by @TkPegatron in [(#244)](https://github.com/omBratteng/vscode-nftables/pull/244)
+
+### New Contributors
+
+- @TkPegatron made their first contribution in [(#244)](https://github.com/omBratteng/vscode-nftables/pull/244)
+
 ## [0.4.5] - 2022-01-27
 
 - chore(deps): bump dependencies
@@ -97,6 +115,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release [`bf39000`](https://github.com/omBratteng/vscode-nftables/commit/bf39000)
 
+[0.5.0]: https://github.com/omBratteng/vscode-nftables/compare/0.4.5...0.5.0
 [0.4.5]: https://github.com/omBratteng/vscode-nftables/compare/0.4.4...0.4.5
 [0.4.4]: https://github.com/omBratteng/vscode-nftables/compare/0.4.3...0.4.4
 [0.4.3]: https://github.com/omBratteng/vscode-nftables/compare/0.4.2...0.4.3
