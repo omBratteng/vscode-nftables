@@ -5,7 +5,7 @@
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/omBratteng/vscode-nftables/continuous-integration?label=CI%20Build&style=for-the-badge)](https://github.com/omBratteng/vscode-nftables/actions/workflows/continous-integration.yml)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=for-the-badge)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=for-the-badge)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A VSCode language support package for the nftables configuration syntax.
@@ -41,6 +41,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/features/security"><img src="https://avatars.githubusercontent.com/u/27347476?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Dependabot</b></sub></a><br /><a href="#tool-dependabot" title="Tools">🔧</a></td>
     <td align="center"><a href="https://github.com/andreas51"><img src="https://avatars.githubusercontent.com/u/46762314?v=4?s=100" width="100px;" alt=""/><br /><sub><b>andreas51</b></sub></a><br /><a href="https://github.com/omBratteng/vscode-nftables/commits?author=andreas51" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/alexisfrjp"><img src="https://avatars.githubusercontent.com/u/6713988?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alexis</b></sub></a><br /><a href="https://github.com/omBratteng/vscode-nftables/commits?author=alexisfrjp" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/TkPegatron"><img src="https://avatars.githubusercontent.com/u/28017270?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Elliana Perry</b></sub></a><br /><a href="https://github.com/omBratteng/vscode-nftables/commits?author=TkPegatron" title="Code">💻</a></td>
   </tr>
 </table>
 
