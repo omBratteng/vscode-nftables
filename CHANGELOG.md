@@ -119,6 +119,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release [`bf39000`](https://github.com/omBratteng/vscode-nftables/commit/bf39000)
 
+[Unreleased]: https://github.com/omBratteng/vscode-nftables/compare/0.5.0...HEAD
 [0.5.0]: https://github.com/omBratteng/vscode-nftables/compare/0.4.5...0.5.0
 [0.4.5]: https://github.com/omBratteng/vscode-nftables/compare/0.4.4...0.4.5
 [0.4.4]: https://github.com/omBratteng/vscode-nftables/compare/0.4.3...0.4.4
