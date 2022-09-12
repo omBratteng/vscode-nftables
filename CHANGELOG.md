@@ -7,7 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.0]
+
 - docs(changelog): fix username for @all-contributors in CHANGELOG by @omBratteng
+- chore(deps): bump actions/cache from 3.0.4 to 3.0.8 by @dependabot in [(#305)](https://github.com/omBratteng/vscode-nftables/pull/305) 78dca2a
+- chore(deps): bump actions/setup-node from 3.3.0 to 3.4.1 by @dependabot in [(#285)](https://github.com/omBratteng/vscode-nftables/pull/285) a591e39
+- chore: bump dependencies by @omBratteng in [(#321)](https://github.com/omBratteng/vscode-nftables/pull/321)
+- fix: fixes closing braces in formatter by @andreas51 in [(#316)](https://github.com/omBratteng/vscode-nftables/pull/316)
 
 ## [0.5.1]
 
@@ -124,7 +130,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release [`bf39000`](https://github.com/omBratteng/vscode-nftables/commit/bf39000)
 
-[Unreleased]: https://github.com/omBratteng/vscode-nftables/compare/0.5.1...HEAD
+[Unreleased]: https://github.com/omBratteng/vscode-nftables/compare/0.6.0...HEAD
+[0.6.0]: https://github.com/omBratteng/vscode-nftables/compare/0.5.1...0.5.0
 [0.5.1]: https://github.com/omBratteng/vscode-nftables/compare/0.5.0...0.5.1
 [0.5.0]: https://github.com/omBratteng/vscode-nftables/compare/0.4.5...0.5.0
 [0.4.5]: https://github.com/omBratteng/vscode-nftables/compare/0.4.4...0.4.5
