@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.1]
+
+- chore(deps): bump actions/checkout from 3.0.2 to 3.2.0 by @dependabot in [(#366)](https://github.com/omBratteng/vscode-nftables/pull/366)
+- chore(deps): bump qs from 6.10.1 to 6.11.0 by @dependabot in [(#362)](https://github.com/omBratteng/vscode-nftables/pull/362)
+- chore(deps-dev): bump @typescript-eslint/parser from 5.36.2 to 5.46.1 by @dependabot in [(#368)](https://github.com/omBratteng/vscode-nftables/pull/368)
+- chore(deps-dev): bump vsce from 2.11.0 to 2.15.0 by @dependabot in [(#369)](https://github.com/omBratteng/vscode-nftables/pull/369)
+- chore(deps-dev): bump ovsx from 0.5.1 to 0.7.1 by @dependabot in [(#367)](https://github.com/omBratteng/vscode-nftables/pull/367)
+- chore(deps-dev): bump webpack-cli from 4.10.0 to 5.0.1 by @dependabot in [(#371)](https://github.com/omBratteng/vscode-nftables/pull/371)
+- chore(deps-dev): bump @typescript-eslint/eslint-plugin from 5.36.2 to 5.46.1 by @dependabot in [(#370)](https://github.com/omBratteng/vscode-nftables/pull/370)
+- chore(deps-dev): bump eslint from 8.23.1 to 8.30.0 by @dependabot in [(#374)](https://github.com/omBratteng/vscode-nftables/pull/374)
+- chore(deps-dev): bump webpack from 5.74.0 to 5.75.0 by @dependabot in [(#372)](https://github.com/omBratteng/vscode-nftables/pull/372)
+- chore(deps-dev): bump prettier from 2.7.1 to 2.8.1 by @dependabot in [(#373)](https://github.com/omBratteng/vscode-nftables/pull/373)
+
 ## [0.6.0]
 
 - docs(changelog): fix username for @all-contributors in CHANGELOG by @omBratteng
@@ -130,8 +143,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release [`bf39000`](https://github.com/omBratteng/vscode-nftables/commit/bf39000)
 
-[Unreleased]: https://github.com/omBratteng/vscode-nftables/compare/0.6.0...HEAD
-[0.6.0]: https://github.com/omBratteng/vscode-nftables/compare/0.5.1...0.5.0
+[Unreleased]: https://github.com/omBratteng/vscode-nftables/compare/0.6.1...HEAD
+[0.6.0]: https://github.com/omBratteng/vscode-nftables/compare/0.6.0...0.6.1
+[0.6.0]: https://github.com/omBratteng/vscode-nftables/compare/0.5.1...0.6.0
 [0.5.1]: https://github.com/omBratteng/vscode-nftables/compare/0.5.0...0.5.1
 [0.5.0]: https://github.com/omBratteng/vscode-nftables/compare/0.4.5...0.5.0
 [0.4.5]: https://github.com/omBratteng/vscode-nftables/compare/0.4.4...0.4.5
