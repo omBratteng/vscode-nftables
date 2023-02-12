@@ -43,3 +43,7 @@ jobs:
       - name: Lint
         run: |
           yarn lint
+
+  dependabot:
+    needs: check
+    uses: ./.github/workflows/dependabot-automerge.yaml
