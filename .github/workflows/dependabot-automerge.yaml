@@ -32,7 +32,7 @@ jobs:
           gh pr merge --auto --squash "$PR_URL"
 
       # Direct prod dependencies
-      - name: Approve PR and auto-merge prod-dependencies (only patches)
+      - name: Approve PR and auto-merge prod-dependencies (only patches and minors)
         if: ${{contains(steps.metadata.outputs.dependency-type, 'direct:production') && steps.metadata.outputs.update-type != 'version-update:semver-major'}}
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
