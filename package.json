@@ -62,7 +62,7 @@
     "@types/node": "18.x",
     "@types/vscode": "1.64.0",
     "@typescript-eslint/eslint-plugin": "^5.52.0",
-    "@typescript-eslint/parser": "^5.52.0",
+    "@typescript-eslint/parser": "^5.53.0",
     "copy-webpack-plugin": "^11.0.0",
     "eslint": "^8.34.0",
     "eslint-config-prettier": "^8.6.0",
