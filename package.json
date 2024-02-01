@@ -68,7 +68,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "ovsx": "^0.8.3",
-    "prettier": "^2.8.8",
+    "prettier": "^3.2.4",
     "ts-loader": "^9.5.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3",
