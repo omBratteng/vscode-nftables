@@ -71,7 +71,7 @@
     "prettier": "^2.8.8",
     "ts-loader": "^9.5.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.3",
+    "typescript": "^5.4.5",
     "vsce": "^2.15.0",
     "vscode-test": "^1.6.1",
     "webpack": "^5.91.0",
