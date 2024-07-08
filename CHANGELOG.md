@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.7.0]
+
+- redefine and undefine support + coloring fixes by @Natolumin in [(#533)](https://github.com/omBratteng/vscode-nftables/pull/533)
+
 ## [0.6.2]
 
 - chore(deps-dev): bump @typescript-eslint/eslint-plugin from 5.46.1 to 5.47.0 by @dependabot in [(#376)](https://github.com/omBratteng/vscode-nftables/pull/376)
@@ -236,7 +240,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release [`bf39000`](https://github.com/omBratteng/vscode-nftables/commit/bf39000)
 
-[Unreleased]: https://github.com/omBratteng/vscode-nftables/compare/0.6.2...HEAD
+[Unreleased]: https://github.com/omBratteng/vscode-nftables/compare/0.7.0...HEAD
+[0.7.0]: https://github.com/omBratteng/vscode-nftables/compare/0.6.2...0.7.0
 [0.6.2]: https://github.com/omBratteng/vscode-nftables/compare/0.6.1...0.6.2
 [0.6.1]: https://github.com/omBratteng/vscode-nftables/compare/0.6.0...0.6.1
 [0.6.0]: https://github.com/omBratteng/vscode-nftables/compare/0.5.1...0.6.0
