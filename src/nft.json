@@ -1329,6 +1329,9 @@
     "stmt_expr": {
       "patterns": [
         {
+          "include": "#comments"
+        },
+        {
           "include": "#map_stmt_expr"
         },
         {
@@ -2108,8 +2111,8 @@
       "name": "constant.numeric.ipv4.nft"
     },
     "set_expr": {
-      "begin": "\\{",
-      "end": "\\}",
+      "begin": "{",
+      "end": "}",
       "name": "entity.set.anon.nft",
       "captures": {
         "0": {
@@ -2154,31 +2157,6 @@
       "patterns": [
         {
           "include": "#set_elem_expr"
-        },
-        {
-          "include": "#set_expr"
-        },
-        {
-          "match": "([^\",;:{]+)\\s*(:)\\s*([^\",;:}]+)",
-          "captures": {
-            "1": {
-              "patterns": [
-                {
-                  "include": "#set_elem_expr"
-                }
-              ]
-            },
-            "2": {
-              "name": "delimiter.colon.set.nft"
-            },
-            "3": {
-              "patterns": [
-                {
-                  "include": "#set_rhs_expr"
-                }
-              ]
-            }
-          }
         }
       ]
     },
