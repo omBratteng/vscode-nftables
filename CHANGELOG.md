@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.8.0]
+
+- fixes anon sets by @andreas51 in [(#565)](https://github.com/omBratteng/vscode-nftables/pull/565)
+
 ## [0.7.0]
 
 - redefine and undefine support + coloring fixes by @Natolumin in [(#533)](https://github.com/omBratteng/vscode-nftables/pull/533)
@@ -240,7 +244,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release [`bf39000`](https://github.com/omBratteng/vscode-nftables/commit/bf39000)
 
-[Unreleased]: https://github.com/omBratteng/vscode-nftables/compare/0.7.0...HEAD
+[Unreleased]: https://github.com/omBratteng/vscode-nftables/compare/0.8.0...HEAD
+[0.8.0]: https://github.com/omBratteng/vscode-nftables/compare/0.7.0...0.8.0
 [0.7.0]: https://github.com/omBratteng/vscode-nftables/compare/0.6.2...0.7.0
 [0.6.2]: https://github.com/omBratteng/vscode-nftables/compare/0.6.1...0.6.2
 [0.6.1]: https://github.com/omBratteng/vscode-nftables/compare/0.6.0...0.6.1
