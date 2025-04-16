@@ -40,7 +40,7 @@
           }
         },
         {
-          "begin": "(define)\\s+([a-zA-Z_\\.][a-zA-Z0-9/\\-_\\.]*)\\s*(=)",
+          "begin": "(define|redefine)\\s+([a-zA-Z_\\.][a-zA-Z0-9/\\-_\\.]*)\\s*(=)",
           "beginCaptures": {
             "1": {
               "name": "keyword.define.nft"
@@ -61,6 +61,17 @@
             }
           ],
           "end": "(?=;|$)"
+        },
+        {
+          "match": "(undefine)\\s+([a-zA-Z_\\.][a-zA-Z0-9/\\-_\\.]*)",
+          "captures": {
+            "1": {
+              "name": "keyword.undefine.nft"
+            },
+            "2": {
+              "name": "variable.other.define.nft"
+            }
+          }
         }
       ]
     },
@@ -663,8 +674,12 @@
             }
           ]
         },
-        "2": "support.function.handle.nft",
-        "3": "constant.numeric.rulehandle.nft"
+        "2": {
+          "name": "support.function.handle.nft"
+        },
+        "3": {
+          "name": "constant.numeric.rulehandle.nft"
+        }
       }
     },
     "rule_position": {
@@ -1404,7 +1419,7 @@
           "name": "delimiter.prefix.nft"
         },
         "3": {
-          "name": "constant.prefixlen.numeric.nft"
+          "name": "constant.numeric.prefixlen.nft"
         }
       }
     },

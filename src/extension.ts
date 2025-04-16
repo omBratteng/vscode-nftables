@@ -41,7 +41,7 @@ const registerDocumentProvider = (
 			skip = true
 		}
 
-		if (!skip && line.endsWith(BRACE_CLOSE)) {
+		if (!skip && line.includes(BRACE_CLOSE)) {
 			indentLevel--
 		}
 
